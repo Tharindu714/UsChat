@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Private Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGIN -->
+    <div id="loginScreen" class="screen">
+
+        <div class="login-box">
+
+            <h1>❤️ Our Chat</h1>
+
+            <p>Enter your login code</p>
+
+            <input
+                type="password"
+                id="loginCode"
+                placeholder="Enter code"
+            >
+
+            <button onclick="login()">
+                Enter Chat
+            </button>
+
+            <p id="loginError" class="error"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHAT -->
+    <div id="chatScreen" class="screen hidden">
+
+        <div class="chat-container">
+
+            <header class="chat-header">
+
+                <div>
+                    <h2 id="chatTitle">Chat</h2>
+                    <span id="onlineStatus">Private chat ❤️</span>
+                </div>
+
+                <button onclick="logout()" class="logout-btn">
+                    Logout
+                </button>
+
+            </header>
+
+
+            <div id="messages" class="messages">
+
+                <!-- Messages appear here -->
+
+            </div>
+
+
+            <div class="message-area">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type a message..."
+                    autocomplete="off"
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
