@@ -51,9 +51,9 @@ const db = getFirestore(app);
 // LOGIN CODES
 // ============================================
 
-const HUSBAND_CODE = "tharinduCHA@8754";
+const HUSBAND_CODE = "tharinduCHA@3989MMD";
 
-const WIFE_CODE = "hl";
+const WIFE_CODE = "NETHU1229";
 
 
 // ============================================
